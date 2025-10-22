@@ -1,0 +1,28 @@
+[package]
+name = "pic_simulator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eframe = "0.29"
+rfd = "0.14"
+
+[[example]]
+name = "hexloader_demo"
+path = "examples/hexloader_demo.rs"
+
+[[example]]
+name = "gpio_demo"
+path = "examples/gpio_demo.rs"
+
+[[example]]
+name = "timer_demo"
+path = "examples/timer_demo.rs"
+
+[[example]]
+name = "interrupt_demo"
+path = "examples/interrupt_demo.rs"
+
+[[example]]
+name = "sleep_wdt_demo"
+path = "examples/sleep_wdt_demo.rs"

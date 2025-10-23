@@ -1,1 +1,93 @@
-/target
+# =======================================
+# .gitignore for PIC12F629/675 Simulator
+# =======================================
+
+# --- Cargo Build Artifacts ---
+# Compiled output directories and build caches
+/target/
+**/target/
+
+# --- Example Outputs ---
+# Example binaries and intermediate build files
+/examples/**/target/
+/examples/**/*.exe
+/examples/**/*.log
+
+# --- Logs and Runtime Outputs ---
+# Any log, output, or runtime dump
+*.log
+/logs/
+/output/
+/tmp/
+/cache/
+
+# --- Backup and Temporary Files ---
+# Backup and editor temp files
+**/*.rs.bk
+*.swp
+*.swo
+*~
+*.tmp
+
+# --- IDE and Editor Settings ---
+# VS Code
+.vscode/
+/.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# IntelliJ / CLion / RustRover
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# --- OS-Specific Files ---
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Environment and Local Config ---
+# Local or system-specific environment configuration
+.env
+.env.*
+
+# --- Documentation and Assets ---
+# Generated documentation by `cargo doc`
+/doc/
+
+# Temporary or cache files inside assets directory
+/assets/cache/
+/assets/tmp/
+/assets/generated/
+/assets/screenshots/tmp/
+
+# --- Compiled Binary Artifacts ---
+# Prevent checked-in compiled executables and libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# --- Test and Coverage Reports ---
+/coverage/
+/test-results/
+/html-report/
+/lcov.info
+
+# --- Cargo and Tool Metadata ---
+.cargo/
+.cargo-ok
+*.lock
+
+# --- Miscellaneous ---
+# Local REPL or simulation session history
+*.history
+.history
